@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="index.css">
@@ -7,14 +6,47 @@
 <title>Amazing GAMES</title>
 </head>
 <body bgcolor="#457EE5">
+<label class="title">Bienvenido ah Amazing GAMES</label>
+<div class="mensaje">
+	<p>Explora un juego hecho por los mismo usuarios de Roblox, incluso podremos contratarte para que nos ayudes en nuestros futuros proyectos que quisieramos sacar mas adelante y tambien podriamos ayudarte con algun tipo de problema que tengas dentro de la experencia promocionada.</p>
+</div>
+<div class="capa1">
+	
+</div>
 <header>
 <div class="btns">
-	<section class="noticias"><a href="/noticias" title="ir al salon de noticias">Noticias</a></section>
-	<section class="informacion"><a href="/reclutar" title="Encuentra informacion acerca del juego">Trabajos</a></section>
-	<section class="ayuda"><a href="/ayuda" title="Te podremos ayudar en algo en esta seccion">Ayuda</a></section>
-	<section class="trabajo"><a href="/info" title="Puedes encontrar un pequeno puesto de trabajo aqui">Informacion</a></section>
+	<section class="noticias"><a href="/noticias" title="ir al salon de noticias">
+		<span>Noticias</span></a>
+	</section>
+	<section class="informacion"><a href="/reclutar" title="Encuentra informacion acerca del juego">
+		<span>Trabajos</span></a>
+	</section>
+	<section class="ayuda"><a href="/ayuda" title="Te podremos ayudar en algo en esta seccion">
+		<span>Ayuda</span></a>
+	</section>
+	<section class="trabajo"><a href="/info" title="Puedes encontrar un pequeno puesto de trabajo aqui">
+		<span>Informacion</span></a>
+	</section>
 </div>
-<div class="giratorio"><a href="/"><img src="https://gamesama.netlify.app/tp/NOTICIAS_2_1.png"></a></div>
+<a href="" class="play_game"><span>Jugar ahora!</span><span class="asd_">______________</span></a>
+<div class="giratorio" id="frame1"><a href="" onclick="location.href=location.href"><img src="https://gamesama.netlify.app/tp/NOTICIAS_2_1.png"></a><button class="cerrar" id="btn1">Cerrar</button></div>
+<button class="abrir" id="btn2">Cerrar</button>
 </header>
+<div class="cargando" id="cargando">
+	<div class="mensaje2">
+		<label>Guardando datos espere por favor</label>
+		<img src="https://gamesama.netlify.app/tp/carga.gif">
+	</div>
+</div>
 </body>
+<script>
+var cargando=document.getElementById('cargando');var frame1=document.getElementById('frame1');const btn1=document.getElementById('btn1');btn1.onclick=function(){frame1.style.display="none";localStorage.setItem('cerrado','si');location.href=location.href;cargando.style.display="block";};const btn2=document.getElementById('btn2');btn2.onclick=function(){frame1.style.display="block";localStorage.setItem('cerrado','no');location.href=location.href;cargando.style.display="block";};
+if (localStorage.getItem('cerrado') === "si") {
+	frame1.style.display="none";
+	btn2.style.display="block";
+}else{
+	frame1.style.display="block";
+	btn2.style.display="none";
+}
+</script>
 </html>
