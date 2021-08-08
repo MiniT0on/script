@@ -1,44 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="index.css">
 <link rel="rel icon" type="image/png" href="https://gamesama.netlify.app/tp/Logo_Amazing_GAMES_nuevo.png">
+<link rel="stylesheet" type="text/css" href="/index.css">
 <title>Amazing GAMES</title>
 </head>
-<body bgcolor="#AD2224">
-<label class="title">Bienvenido ah Amazing GAMES</label>
+<body bgcolor="#958B94">
+<div class="img">
+<img src="https://gamesama.netlify.app/tp/imagen1.jpg">
+</div>
+<div class="capa1" id="cakpa1">	
+<div class="title" >
+<label>AMAZING GAMES</label>
+</div>
 <div class="mensaje">
-	<p>Explora un juego hecho por los mismo usuarios de Roblox, incluso podremos contratarte para que nos ayudes en nuestros futuros proyectos que quisieramos sacar mas adelante y tambien podriamos ayudarte con algun tipo de problema que tengas dentro de la experencia promocionada.</p>
+<label>Es impresionante que los mismo usuarios de Roblox puedan crear videojuego con progrmacion "Lua", y lo mas impresionante esque hasta chicos / chicas de 12  podrian crear sus propios juegos si aprendieran sobre lo que viene siendo el script</label>
 </div>
-<div class="capa1">
-	
+<div class="btnFrame">
+<a href="https://gamesama.netlify.app/" target="_blank" class="asdsad">Juega ahora!</a>
 </div>
-<header>
+</div>
+<div class="capa2" id="cakpa2">
+<div class="title">
+<label>Ofertas de trabajo(Se pagaran con Robux)</label>
+</div>
+<div class="mensaje">
+<label>Puedes encontrar trabajo como Scripter o Builder o Render, ETC... Pero se te pagara con Robux y si estas interesado en un puesto de trabajo de Amazing Games por que no vas al apartado de trabajo, ¡Qué esperas? unetenos antes de que alguien te quite tu puesto!</label>
+</div>
+<div class="btnFrame">
+<a href="https://gamesama.netlify.app/trabajo" target="_blank" class="asdsad">Buscar puesto</a>
+</div>
+</div>
+<div class="capa3" id="cakpa3">
+<div class="title">
+<label>Noticias del juego</label>
+</div>
+<div class="mensaje">
+<label>Sabias que la mitad de nuestro juego fue mayormente realizada por un Scripter y un Builder sorprendente ¿no?, hay esta y muchas mas noticias dentro del canal de noticias que esperas para entrar?</label>
+</div>
+<div class="btnFrame">
+<a href="https://gamesama.netlify.app/noticias" target="_blank" class="asdsad">Buscar puesto</a>
+</div>
+</div>
+<div class="capa4" id="cakpa4">
+<div class="title">
+<label>SADSAD</label>
+</div>
+<div class="mensaje">
+<label>Sabias que la mitad de nuestro juego fue mayormente realizada por un Scripter y un Builder sorprendente ¿no?, hay esta y muchas mas noticias dentro del canal de noticias que esperas para entrar?</label>
+</div>
+<div class="btnFrame">
+<a href="https://gamesama.netlify.app/noticias" target="_blank" class="asdsad">Buscar puesto</a>
+</div>
+</div>
+
+<!-- Weader  -->
+<div class="arriba">
+<div class="giragira">
+<img src="https://gamesama.netlify.app/tp/NOTICIAS_2_1.png">
+</div>
 <div class="btns">
-	<section class="noticias"><a href="/noticias" title="ir al salon de noticias">
-		<span>Noticias</span></a>
-	</section>
-	<section class="informacion"><a href="/reclutar" title="Encuentra informacion acerca del juego">
-		<span>Trabajos</span></a>
-	</section>
-	<section class="ayuda"><a href="/ayuda" title="Te podremos ayudar en algo en esta seccion">
-		<span>Ayuda</span></a>
-	</section>
-	<section class="trabajo"><a href="/info" title="Puedes encontrar un pequeno puesto de trabajo aqui">
-		<span>Informacion</span></a>
-	</section>
+<div class="info">
+<a href="/info" title="Consigue un poco de informacion sobre nuestro juego y quizas puedas resolver algun error tuyo"><span>Informacion</span></a>
 </div>
-<a class="play_game"><span>Jugar ahora!</span></a>
-<div class="giratorio" id="frame1"><a href=""><img src="https://gamesama.netlify.app/tp/NOTICIAS_2_1.png"></a></div>
-</header>
-<div class="cargando" style="display:block;" id="cerrado">
-	<div class="mensaje2">
-		<label>Cargando por favor espere un momento</label>
-		<img src="https://gamesama.netlify.app/tp/carga.gif">
-	</div>
+<div class="trabajito">
+<a href="/trabajo" title="Por que no consigues un puesto de trabajo con nosotros, mira los puestos desocupados"><span>Trabajo</span></a>
+</div>
+<div class="noticitias">
+<a href="/noticias" title="informate sobre nuevas actualizaciones de nuestro juego"><span>Noticias</span></a>
+</div>
+<div class="ayudita">
+<a href="/ayuda" title="algun error?"><span>Ayuda</span></a>
+</div>
+</div>
+</div>
+<div class="ir">
+<label>Pagina</label>
+<p id="contero"></p>
+<button class="ira1" id="ir1" onclick="sadr1();"><</button>
+<button class="ira2" id="ir2" onclick="sadr2();">></button>	
 </div>
 </body>
 <script>
-	var cerrado=document.getElementById('cerrado');cerrado.remove();
+var cakpa1=document.getElementById('cakpa1');var cakpa2=document.getElementById('cakpa2');var cakpa3=document.getElementById('cakpa3');var cakpa4=document.getElementById('cakpa4');var numero=1;const ir1=document.getElementById('ir1');var contero=document.getElementById('contero');contero.innerHTML=numero;
+function sadr1() {
+numero = numero -1;
+contero.innerHTML=numero;
+if (numero == 0){numero=numero+1;contero.innerHTML=numero;}; if(numero == 1){contero.innerHTML=numero;cakpa1.style.display="block";cakpa2.style.display="none";cakpa3.style.display="none";capa4.style.display="none";}; if(numero == 2){contero.innerHTML=numero;cakpa1.style.display="none";cakpa2.style.display="block";cakpa3.style.display="none";capa4.style.display="none";}; if(numero == 3){contero.innerHTML=numero;cakpa1.style.display="none";cakpa2.style.display="none";cakpa3.style.display="block";cakpa4.style.display="none";}; if(numero==4) {contero.innerHTML=numero;cakpa1.style.display="none";cakpa2.style.display="none";cakpa3.style.display="none";cakpa4.style.display="block";}if(numero==5){alert('El numero 4 es el numero de paginas permitidas');numero=numero-1;};
+};
+function sadr2(){
+numero = numero +1;
+contero.innerHTML=numero;
+if (numero == 0){numero=numero+1;contero.innerHTML=numero;}; if(numero == 1){contero.innerHTML=numero;cakpa1.style.display="block";cakpa2.style.display="none";cakpa3.style.display="none";capa4.style.display="none";}; if(numero == 2){contero.innerHTML=numero;cakpa1.style.display="none";cakpa2.style.display="block";cakpa3.style.display="none";cakpa4.style.display="none";}; if(numero == 3){contero.innerHTML=numero;cakpa1.style.display="none";cakpa2.style.display="none";cakpa3.style.display="block";cakpa4.style.display="none";}; if(numero==4) {contero.innerHTML=numero;cakpa1.style.display="none";cakpa2.style.display="none";cakpa3.style.display="none";cakpa4.style.display="block";}; if(numero==5){numero=numero-1;contero.innerHTML=numero;}
+};	
 </script>
-</html>
+</html>GPB-3362
